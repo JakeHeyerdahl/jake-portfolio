@@ -39,7 +39,7 @@ export default function Portfolio() {
         <div className="container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="space-y-6 pt-20 md:pt-16 lg:pt-20">
             <div className="space-y-2">
-              <h2 className="text-5xl md:text-7xl font-bold text-dark-text">Designer</h2>
+              <h2 className="text-5xl md:text-7xl font-bold text-dark-text">Builder</h2>
               <h1 className="text-5xl md:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-red-orange-500">
                 Jake
               </h1>
@@ -48,7 +48,13 @@ export default function Portfolio() {
               </h1>
             </div>
             <p className="text-xl text-dark-text-light max-w-[600px]">
-              I craft exceptional experiences for mission driven projects.
+              Cutting edge AI Development.  
+            </p>
+            <p className="text-xl text-dark-text-light max-w-[600px]">
+              MS in HCI and 5 Years of Design Experience.  
+            </p>
+            <p className="text-xl text-dark-text-light max-w-[600px]">
+              Full stack experience developer ready to build.  
             </p>
             <div className="flex gap-4 pt-4">
               <Link href="https://www.instagram.com/jakehey/" target="_blank" rel="noopener noreferrer">
@@ -132,8 +138,8 @@ export default function Portfolio() {
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-orange-500/20 to-red-orange-500/20 blur-xl opacity-70"></div>
               <div className="relative aspect-square rounded-xl overflow-hidden border border-gray-200 shadow-lg">
                 <img
-                  src="/images/jake-bike.jpg"
-                  alt="Jake Heyerdahl mountain biking"
+                  src="/images/circle all.jpg"
+                  alt="Jake Heyerdahl"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -142,7 +148,7 @@ export default function Portfolio() {
             <div className="space-y-6 order-1 md:order-2">
               <GlassmorphicCard>
                 <p className="text-lg text-dark-text-light">
-                  I am a passionate experience/product designer and researcher, with experience building for both mobile
+                  I am a passionate experience/product designer, researcher and developer with experience building for both mobile
                   and desktop. I specialize in high level design thinking and prototyping.
                 </p>
                 <p className="text-lg text-dark-text-light mt-4">
@@ -205,69 +211,288 @@ export default function Portfolio() {
         <div className="container relative z-10">
           <SectionHeading title="Featured Projects" />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-            <ProjectCard
-              title="Ancestry Message Center"
-              description="Redesigned messaging center improving user engagement and communication flow. Added file attachments, reactions, faceted search, and conversation archiving."
-              image="/images/ancestry-message-center.png"
-              link="/case-studies/ancestry-message-center"
-              linkType="internal"
-            />
-            <ProjectCard
-              title="Access Development Hotels"
-              description="Redesigned hotel booking flows resulting in 30% increase in monthly revenue."
-              image="/images/access-development-hotels.png"
-              link="/case-studies/access-development-hotels"
-              linkType="internal"
-            />
-            <ProjectCard
-              title="Ancestry Social Share Flow"
-              description="Enhanced social sharing experience to improve user engagement and retention. Created commenting system, reactions, and universal sharing components."
-              image="/images/ancestry-social-share-flow.png"
-              link="https://drive.google.com/file/d/17QgLVMPWmyeNEG7ERwmoi6ayytQVtrEz/view?usp=drive_link"
-              linkType="external"
-            />
-            <ProjectCard
-              title="Access Development Design System"
-              description="Led design system creation and management for B2B discount platform."
-              image="/images/access-development-design-system.jpg"
-              linkType="lightbox"
-              lightboxImage="/images/access-design-system-overview.jpg"
-            />
-            <ProjectCard
-              title="Pluralsight Learning Center"
-              description="Redesigned the most visited page on the platform improving usability and UX."
-              image="/images/pluralsight-learning-center.gif"
-              link="https://drive.google.com/file/d/1B2osrcBVw6YZRs3Jloa7zz7LeBSqKGPl/view?usp=drive_link"
-              linkType="external"
-            />
-            <ProjectCard
-              title="Reset Wearable BioFeedback"
-              description="Designed user experience for wearable biofeedback technology platform."
-              image="/images/reset-wearable-biofeedback.jpg"
-              link="https://drive.google.com/file/d/1SPa4llj_KNKveV76t_yDg5DTjuIYBnsq/view?usp=drive_link"
-              linkType="external"
-            />
-            <ProjectCard
-              title="OLA Canadian Non Profit Database"
-              description="Building grant/funding database UI to help Canadian nonprofit and First Nations organizations."
-              image="/images/ola-canadian-nonprofit-database.png"
-              comingSoon={true}
-            />
-            <ProjectCard
-              title="Pre-emt Wearable Addiction Intervention"
-              description="Designed intervention system for wearable addiction prevention technology."
-              image="/images/pre-emt-wearable-addiction-intervention.png"
-              link="https://drive.google.com/file/d/1fENWr38v5QD_U5hN-Nh7Pxu44wUz261K/view?usp=drive_link"
-              linkType="external"
-            />
-            <ProjectCard
-              title="Eskenazi Museum AR Experience"
-              description="Created augmented reality experience for museum visitors to enhance engagement."
-              image="/images/eskenazi-museum-ar-experience.jpg"
-              link="https://drive.google.com/file/d/1jOWkWt6C3s089V-RuEJ_3fZ6BjdeZASB/view?usp=sharing"
-              linkType="external"
-            />
+          <div className="space-y-16 mt-16">
+            {/* Ancestry Message Center */}
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+              <div className="lg:col-span-1">
+                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+                  <img
+                    src="/images/ancestry-message-center.png"
+                    alt="Ancestry Message Center"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                  <h3 className="text-2xl font-bold text-dark-text mb-4">Ancestry Message Center</h3>
+                  <div className="space-y-2 text-dark-text-light">
+                    <p>Redesigned messaging center to improve user engagement and communication flow</p>
+                    <p>Added file attachments, reactions, faceted search, and conversation archiving</p>
+                    <p>Created modern messaging experience for genealogy research collaboration</p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-orange-500 mb-2">Key Outcomes</h4>
+                  <ul className="space-y-2 text-dark-text-light">
+                    <li>Reduced overall churn by 4%</li>
+                    <li>Increased time on platform by 7%</li>
+                    <li>Received higher satisfaction ratings by power users</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Access Development Hotels */}
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+              <div className="lg:col-span-1">
+                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+                  <img
+                    src="/images/access-development-hotels.png"
+                    alt="Access Development Hotels"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                  <h3 className="text-2xl font-bold text-dark-text mb-4">Access Development Hotels</h3>
+                  <div className="space-y-2 text-dark-text-light">
+                    <p>Complete redesign of hotel booking flows focusing on user experience optimization</p>
+                    <p>Enhanced search functionality and streamlined booking process</p>
+                    <p>Improved desktop to mobile visual cohesion and responsiveness</p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-orange-500 mb-2">Key Outcomes</h4>
+                  <ul className="space-y-2 text-dark-text-light">
+                    <li>30% increase in monthly revenue</li>
+                    <li>15% increase in invoice amounts</li>
+                    <li>3.5% increase in conversion</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Ancestry Social Share Flow */}
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+              <div className="lg:col-span-1">
+                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+                  <img
+                    src="/images/ancestry-social-share-flow.png"
+                    alt="Ancestry Social Share Flow"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                  <h3 className="text-2xl font-bold text-dark-text mb-4">Ancestry Social Share Flow</h3>
+                  <div className="space-y-2 text-dark-text-light">
+                    <p>Enhanced social sharing experience to improve user engagement and retention</p>
+                    <p>Created comprehensive commenting system with reactions and interactions</p>
+                    <p>Built universal sharing components for family history discoveries</p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-orange-500 mb-2">Key Outcomes</h4>
+                  <ul className="space-y-2 text-dark-text-light">
+                    <li>Increased user engagement</li>
+                    <li>Improved family collaboration</li>
+                    <li>Better content discovery</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Access Development Design System */}
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+              <div className="lg:col-span-1">
+                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+                  <img
+                    src="/images/access-development-design-system.jpg"
+                    alt="Access Development Design System"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                  <h3 className="text-2xl font-bold text-dark-text mb-4">Access Development Design System</h3>
+                  <div className="space-y-2 text-dark-text-light">
+                    <p>Led creation and management of comprehensive design system for B2B platform</p>
+                    <p>Established consistent design patterns and component libraries</p>
+                    <p>Created flow library as ultimate source of truth for design documentation</p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-orange-500 mb-2">Key Outcomes</h4>
+                  <ul className="space-y-2 text-dark-text-light">
+                    <li>Improved design consistency</li>
+                    <li>Faster development cycles</li>
+                    <li>Enhanced team collaboration</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Pluralsight Learning Center */}
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+              <div className="lg:col-span-1">
+                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+                  <img
+                    src="/images/pluralsight-learning-center.gif"
+                    alt="Pluralsight Learning Center"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                  <h3 className="text-2xl font-bold text-dark-text mb-4">Pluralsight Learning Center</h3>
+                  <div className="space-y-2 text-dark-text-light">
+                    <p>Redesigned the most visited page on the platform to improve usability</p>
+                    <p>Focused on learning path discovery and progress tracking</p>
+                    <p>Enhanced personalized content recommendations and user experience</p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-orange-500 mb-2">Key Outcomes</h4>
+                  <ul className="space-y-2 text-dark-text-light">
+                    <li>Enhanced learning experience</li>
+                    <li>Improved content discovery</li>
+                    <li>Better progress tracking</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Reset Wearable BioFeedback */}
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+              <div className="lg:col-span-1">
+                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+                  <img
+                    src="/images/reset-wearable-biofeedback.jpg"
+                    alt="Reset Wearable BioFeedback"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                  <h3 className="text-2xl font-bold text-dark-text mb-4">Reset Wearable BioFeedback</h3>
+                  <div className="space-y-2 text-dark-text-light">
+                    <p>Designed comprehensive user experience for wearable biofeedback technology</p>
+                    <p>Created intuitive interfaces for real-time biological data visualization</p>
+                    <p>Developed user-friendly health insights and monitoring dashboards</p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-orange-500 mb-2">Key Outcomes</h4>
+                  <ul className="space-y-2 text-dark-text-light">
+                    <li>Intuitive data visualization</li>
+                    <li>Improved user health insights</li>
+                    <li>Seamless wearable integration</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* OLA Canadian Non Profit Database */}
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+              <div className="lg:col-span-1">
+                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+                  <img
+                    src="/images/ola-canadian-nonprofit-database.png"
+                    alt="OLA Canadian Non Profit Database"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                  <h3 className="text-2xl font-bold text-dark-text mb-4">OLA Canadian Non Profit Database</h3>
+                  <div className="inline-block px-3 py-1 bg-orange-100 text-orange-600 rounded-full text-sm font-medium mb-2">
+                    Coming Soon
+                  </div>
+                  <div className="space-y-2 text-dark-text-light">
+                    <p>Building grant/funding database for Canadian nonprofit organizations</p>
+                    <p>Creating intuitive search and filtering systems for complex grant data</p>
+                    <p>Helping First Nations organizations discover funding opportunities</p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-orange-500 mb-2">Key Outcomes</h4>
+                  <ul className="space-y-2 text-dark-text-light">
+                    <li>Improved funding discovery</li>
+                    <li>Enhanced search capabilities</li>
+                    <li>Streamlined application process</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Pre-emt Wearable Addiction Intervention */}
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+              <div className="lg:col-span-1">
+                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+                  <img
+                    src="/images/pre-emt-wearable-addiction-intervention.png"
+                    alt="Pre-emt Wearable Addiction Intervention"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                  <h3 className="text-2xl font-bold text-dark-text mb-4">Pre-emt Wearable Addiction Intervention</h3>
+                  <div className="space-y-2 text-dark-text-light">
+                    <p>Designed intervention system for wearable addiction prevention technology</p>
+                    <p>Created user-centered interfaces for real-time behavioral monitoring</p>
+                    <p>Built intervention triggers and recovery support tools</p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-orange-500 mb-2">Key Outcomes</h4>
+                  <ul className="space-y-2 text-dark-text-light">
+                    <li>Real-time intervention system</li>
+                    <li>Behavioral pattern recognition</li>
+                    <li>Privacy-focused design</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Eskenazi Museum AR Experience */}
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+              <div className="lg:col-span-1">
+                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
+                  <img
+                    src="/images/eskenazi-museum-ar-experience.jpg"
+                    alt="Eskenazi Museum AR Experience"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                  <h3 className="text-2xl font-bold text-dark-text mb-4">Eskenazi Museum AR Experience</h3>
+                  <div className="space-y-2 text-dark-text-light">
+                    <p>Created augmented reality experience for museum visitors</p>
+                    <p>Designed interactive AR interfaces overlaying digital content onto artworks</p>
+                    <p>Enhanced engagement with art collections through immersive learning</p>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-orange-500 mb-2">Key Outcomes</h4>
+                  <ul className="space-y-2 text-dark-text-light">
+                    <li>Enhanced visitor engagement</li>
+                    <li>Interactive learning experiences</li>
+                    <li>Innovative AR implementation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
