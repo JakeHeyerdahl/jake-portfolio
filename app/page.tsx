@@ -138,7 +138,7 @@ export default function Portfolio() {
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-r from-orange-500/20 to-red-orange-500/20 blur-xl opacity-70"></div>
               <div className="relative aspect-square rounded-xl overflow-hidden border border-gray-200 shadow-lg">
                 <img
-                  src="/images/circle all.jpg"
+                  src="/images/circle all.JPG"
                   alt="Jake Heyerdahl"
                   className="w-full h-full object-cover"
                 />
