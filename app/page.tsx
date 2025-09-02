@@ -215,13 +215,15 @@ export default function Portfolio() {
             {/* Ancestry Message Center */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
-                  <img
-                    src="/images/ancestry-message-center.png"
-                    alt="Ancestry Message Center"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <Link href="/case-studies/ancestry-message-center" className="block">
+                  <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                    <img
+                      src="/images/ancestry-message-center.png"
+                      alt="Ancestry Message Center"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </Link>
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
@@ -246,13 +248,15 @@ export default function Portfolio() {
             {/* Access Development Hotels */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
-                  <img
-                    src="/images/access-development-hotels.png"
-                    alt="Access Development Hotels"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <Link href="/case-studies/access-development-hotels" className="block">
+                  <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                    <img
+                      src="/images/access-development-hotels.png"
+                      alt="Access Development Hotels"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </Link>
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
@@ -277,13 +281,15 @@ export default function Portfolio() {
             {/* Ancestry Social Share Flow */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
-                  <img
-                    src="/images/ancestry-social-share-flow.png"
-                    alt="Ancestry Social Share Flow"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <a href="/resume/jake-heyerdahl-resume.pdf" target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                    <img
+                      src="/images/ancestry-social-share-flow.png"
+                      alt="Ancestry Social Share Flow"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </a>
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
@@ -308,13 +314,15 @@ export default function Portfolio() {
             {/* Access Development Design System */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
-                  <img
-                    src="/images/access-development-design-system.jpg"
-                    alt="Access Development Design System"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <a href="/resume/jake-heyerdahl-resume.pdf" target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                    <img
+                      src="/images/access-development-design-system.jpg"
+                      alt="Access Development Design System"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </a>
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
@@ -339,13 +347,15 @@ export default function Portfolio() {
             {/* Pluralsight Learning Center */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
-                  <img
-                    src="/images/pluralsight-learning-center.gif"
-                    alt="Pluralsight Learning Center"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <a href="/resume/jake-heyerdahl-resume.pdf" target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                    <img
+                      src="/images/pluralsight-learning-center.gif"
+                      alt="Pluralsight Learning Center"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </a>
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
@@ -370,13 +380,15 @@ export default function Portfolio() {
             {/* Reset Wearable BioFeedback */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
-                  <img
-                    src="/images/reset-wearable-biofeedback.jpg"
-                    alt="Reset Wearable BioFeedback"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <a href="/resume/jake-heyerdahl-resume.pdf" target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                    <img
+                      src="/images/reset-wearable-biofeedback.jpg"
+                      alt="Reset Wearable BioFeedback"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </a>
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
@@ -401,13 +413,15 @@ export default function Portfolio() {
             {/* OLA Canadian Non Profit Database */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
-                  <img
-                    src="/images/ola-canadian-nonprofit-database.png"
-                    alt="OLA Canadian Non Profit Database"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <a href="/resume/jake-heyerdahl-resume.pdf" target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                    <img
+                      src="/images/ola-canadian-nonprofit-database.png"
+                      alt="OLA Canadian Non Profit Database"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </a>
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
@@ -435,13 +449,15 @@ export default function Portfolio() {
             {/* Pre-emt Wearable Addiction Intervention */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
-                  <img
-                    src="/images/pre-emt-wearable-addiction-intervention.png"
-                    alt="Pre-emt Wearable Addiction Intervention"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <a href="/resume/jake-heyerdahl-resume.pdf" target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                    <img
+                      src="/images/pre-emt-wearable-addiction-intervention.png"
+                      alt="Pre-emt Wearable Addiction Intervention"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </a>
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
@@ -466,13 +482,15 @@ export default function Portfolio() {
             {/* Eskenazi Museum AR Experience */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg">
-                  <img
-                    src="/images/eskenazi-museum-ar-experience.jpg"
-                    alt="Eskenazi Museum AR Experience"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <a href="/resume/jake-heyerdahl-resume.pdf" target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
+                    <img
+                      src="/images/eskenazi-museum-ar-experience.jpg"
+                      alt="Eskenazi Museum AR Experience"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </a>
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
