@@ -91,7 +91,7 @@ export function FloatingNav() {
                 asChild
               >
                 <Link
-                  href="https://drive.google.com/file/d/1PWsfoHbpUWCn_Ig5qpyqnaorK-eFnXBf/view?usp=sharing"
+                  href="/resume/jake-heyerdahl-resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -127,7 +127,7 @@ export function FloatingNav() {
               asChild
             >
               <Link
-                href="https://drive.google.com/file/d/1PWsfoHbpUWCn_Ig5qpyqnaorK-eFnXBf/view?usp=sharing"
+                href="/resume/jake-heyerdahl-resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >

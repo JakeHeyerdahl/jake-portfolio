@@ -20,6 +20,15 @@ const nextConfig = {
           },
         ],
       },
+      {
+        source: '/project pdfs/:path*',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/pdf',
+          },
+        ],
+      },
     ]
   },
 }

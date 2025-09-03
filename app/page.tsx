@@ -347,7 +347,7 @@ export default function Portfolio() {
             {/* Pluralsight Learning Center */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <a href="/resume/jake-heyerdahl-resume.pdf" target="_blank" rel="noopener noreferrer" className="block">
+                <a href="/project pdfs/Pluralsight-case-study.pdf" target="_blank" rel="noopener noreferrer" className="block">
                   <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                     <img
                       src="/images/pluralsight-learning-center.gif"
@@ -380,7 +380,7 @@ export default function Portfolio() {
             {/* Reset Wearable BioFeedback */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <a href="/resume/jake-heyerdahl-resume.pdf" target="_blank" rel="noopener noreferrer" className="block">
+                <a href="/project pdfs/Reset-case-study.pdf" target="_blank" rel="noopener noreferrer" className="block">
                   <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                     <img
                       src="/images/reset-wearable-biofeedback.jpg"
@@ -449,7 +449,7 @@ export default function Portfolio() {
             {/* Pre-emt Wearable Addiction Intervention */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <a href="/resume/jake-heyerdahl-resume.pdf" target="_blank" rel="noopener noreferrer" className="block">
+                <a href="/project pdfs/Preemt-case-study.pdf" target="_blank" rel="noopener noreferrer" className="block">
                   <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                     <img
                       src="/images/pre-emt-wearable-addiction-intervention.png"
@@ -482,7 +482,7 @@ export default function Portfolio() {
             {/* Eskenazi Museum AR Experience */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <a href="/resume/jake-heyerdahl-resume.pdf" target="_blank" rel="noopener noreferrer" className="block">
+                <a href="/project pdfs/Eskenazi-museum-ar-case-study.pdf" target="_blank" rel="noopener noreferrer" className="block">
                   <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                     <img
                       src="/images/eskenazi-museum-ar-experience.jpg"

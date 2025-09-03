@@ -36,7 +36,7 @@ export default function AccessDevelopmentHotelsCaseStudy() {
                 Get In Touch
               </button>
               <Link
-                href="https://drive.google.com/file/d/1PWsfoHbpUWCn_Ig5qpyqnaorK-eFnXBf/view?usp=sharing"
+                href="/resume/jake-heyerdahl-resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 text-dark-text-light hover:text-[#046BD9] transition-colors"
@@ -866,7 +866,7 @@ export default function AccessDevelopmentHotelsCaseStudy() {
                 LinkedIn
               </Link>
               <Link
-                href="https://drive.google.com/file/d/1PWsfoHbpUWCn_Ig5qpyqnaorK-eFnXBf/view?usp=sharing"
+                href="/resume/jake-heyerdahl-resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-[#046BD9] transition-colors"
