@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import { useState } from "react"
 import { Linkedin, Mail, Instagram, ChevronDown } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -8,6 +9,7 @@ import { ProjectCard } from "@/components/project-card"
 import { SkillBadge } from "@/components/skill-badge"
 import { Timeline } from "@/components/timeline"
 import { CreativeHero } from "@/components/creative-hero"
+import { ImageLightbox } from "@/components/image-lightbox"
 import { FloatingNav } from "@/components/floating-nav"
 import { MouseFollower } from "@/components/mouse-follower"
 import { ScrollProgress } from "@/components/scroll-progress"
@@ -15,11 +17,21 @@ import { SectionHeading } from "@/components/section-heading"
 import { GlassmorphicCard } from "@/components/glassmorphic-card"
 
 export default function Portfolio() {
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+  const [lightboxImage, setLightboxImage] = useState("")
+  const [lightboxAlt, setLightboxAlt] = useState("")
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
     }
+  }
+
+  const openLightbox = (imageSrc: string, imageAlt: string) => {
+    setLightboxImage(imageSrc)
+    setLightboxAlt(imageAlt)
+    setLightboxOpen(true)
   }
 
   return (
@@ -281,7 +293,7 @@ export default function Portfolio() {
             {/* Ancestry Social Share Flow */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <a href="/resume/jake-heyerdahl-resume.pdf" target="_blank" rel="noopener noreferrer" className="block">
+                <a href="/project pdfs/ancestry-social-share-case-study.pdf" target="_blank" rel="noopener noreferrer" className="block">
                   <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
                     <img
                       src="/images/ancestry-social-share-flow.png"
@@ -314,15 +326,16 @@ export default function Portfolio() {
             {/* Access Development Design System */}
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
               <div className="lg:col-span-1">
-                <a href="/resume/jake-heyerdahl-resume.pdf" target="_blank" rel="noopener noreferrer" className="block">
-                  <div className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer">
-                    <img
-                      src="/images/access-development-design-system.jpg"
-                      alt="Access Development Design System"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </a>
+                <div 
+                  className="aspect-square rounded-lg overflow-hidden border border-gray-200 shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+                  onClick={() => openLightbox("/images/access-development-design-system.jpg", "Access Development Design System")}
+                >
+                  <img
+                    src="/images/access-development-design-system.jpg"
+                    alt="Access Development Design System"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
               </div>
               <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
@@ -624,6 +637,13 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
+
+      <ImageLightbox
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+        imageSrc={lightboxImage}
+        imageAlt={lightboxAlt}
+      />
     </div>
   )
 }
