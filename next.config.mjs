@@ -9,6 +9,19 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  async headers() {
+    return [
+      {
+        source: '/resume/:path*',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/pdf',
+          },
+        ],
+      },
+    ]
+  },
 }
 
 export default nextConfig
